@@ -124,9 +124,7 @@
 
       $(".main.style2").unscrollex();
     };
-
-    breakpoints.on("<=small", off);
-    breakpoints.on(">small", on);
+    on();
   }
 
   // Events.

@@ -1451,10 +1451,6 @@ footer {
   #header h1 a {
     font-size: 1em;
   }
-
-  #header nav {
-    display: none;
-  }
 }
 
 body {
@@ -1643,10 +1639,6 @@ body.is-touch .main {
 }
 
 @media screen and (max-width: 736px) {
-  .main > .content br {
-    display: none;
-  }
-
   .main.fullscreen {
     height: auto !important;
   }
@@ -1663,23 +1655,10 @@ body.is-touch .main {
     padding: 6em 15px 6em 15px;
   }
 
-  .main.style2:before,
-  .main.style2:after {
-    display: none !important;
-  }
-
-  .main.style2 .button.anchored {
-    display: none;
-  }
-
   .main.style2 .content {
     width: 100%;
     max-width: 100%;
     text-align: center;
-    -moz-transform: none;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
   }
 
   .main.style3 {
@@ -1777,10 +1756,9 @@ body.is-touch .main {
 /* One */
 
 #one {
-  background: url("../../images/one.jpg");
+  background: url("../../images/one.jpg") no-repeat center center;
   background-size: cover;
-  background-attachment: fixed, fixed;
-  background-position: top left, center center;
+  background-attachment: fixed;
 }
 
 .about-text {
@@ -1896,10 +1874,9 @@ body.is-touch .main {
 /* Two */
 
 #two {
-  background: url("../../images/two.jpg");
+  background: url("../../images/two.jpg") no-repeat center center;
   background-size: cover;
-  background-attachment: fixed, fixed;
-  background-position: top left, center center;
+  background-attachment: fixed;
 }
 
 .skills-container {
