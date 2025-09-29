@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;900&display=swap");
+
+#intro-aerial-wrapper {
+  font-family: "Inter", sans-serif;
+  font-size: 15pt;
+  font-weight: 300 !important;
+  letter-spacing: -0.025em;
+  line-height: 1.75em;
+  color: #fff;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+#intro-aerial-wrapper.is-preload *,
+#intro-aerial-wrapper.is-preload *:before,
+#intro-aerial-wrapper.is-preload *:after {
+  animation: none !important;
+  transition: none !important;
+}
+
+@keyframes aerial-wrapper {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#intro-aerial-wrapper #aerial-wrapper {
+  animation: aerial-wrapper 3s forwards;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@keyframes aerial-bg {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-2250px, 0, 0);
+  }
+}
+
+#intro-aerial-wrapper #aerial-bg {
+  animation: aerial-bg 60s linear infinite;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  background: #2f443d url("./images/bg.jpg") bottom left;
+  background-repeat: repeat-x;
+  background-size: 2250px auto;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  width: 6750px;
+}
+
+@keyframes aerial-overlay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#intro-aerial-wrapper #aerial-overlay {
+  animation: aerial-overlay 1.5s 1.5s forwards;
+  background-attachment: scroll, scroll;
+  background-image: url("./images/overlay-pattern.png"),
+    url("./images/overlay.svg");
+  background-position: top left, center center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#intro-aerial-wrapper #aerial-main {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+#intro-aerial-wrapper #aerial-main:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  margin-right: 0;
+  vertical-align: middle;
+  width: 1px;
+}
+
+@keyframes aerial-header {
+  0% {
+    transform: translate3d(0, 1em, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes aerial-nav-icons {
+  0% {
+    transform: translate3d(0, 1em, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+#intro-aerial-wrapper #aerial-header {
+  animation: aerial-header 1s 2.25s forwards;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  cursor: default;
+  display: inline-block;
+  opacity: 0;
+  position: relative;
+  text-align: center;
+  top: -1em;
+  vertical-align: middle;
+  width: 90%;
+}
+
+#intro-aerial-wrapper #aerial-header h1 {
+  font-size: 4.35em;
+  font-weight: 900;
+  letter-spacing: -0.035em;
+  line-height: 1em;
+  margin: 0;
+  color: #fff;
+}
+
+#intro-aerial-wrapper #aerial-header p {
+  font-size: 1.25em;
+  margin: 0.75em 0 0.25em 0;
+  opacity: 0.75;
+  color: #fff;
+}
+
+#intro-aerial-wrapper #aerial-header nav {
+  margin: 1.5em 0 0 0;
+}
+
+#intro-aerial-wrapper #aerial-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#intro-aerial-wrapper #aerial-header nav li {
+  animation: aerial-nav-icons 0.5s ease-in-out forwards;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  display: inline-block;
+  height: 5.35em;
+  line-height: 5.885em;
+  opacity: 0;
+  position: relative;
+  top: 0;
+  width: 5.35em;
+}
+
+#intro-aerial-wrapper #aerial-header nav li:nth-child(1) {
+  animation-delay: 2.5s;
+}
+#intro-aerial-wrapper #aerial-header nav li:nth-child(2) {
+  animation-delay: 2.75s;
+}
+#intro-aerial-wrapper #aerial-header nav li:nth-child(3) {
+  animation-delay: 3s;
+}
+
+#intro-aerial-wrapper #aerial-header nav a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  border: 0;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+}
+
+#intro-aerial-wrapper #aerial-header nav a:before {
+  transition: all 0.2s ease-in-out;
+  border-radius: 100%;
+  border: solid 1px #fff;
+  display: block;
+  font-size: 1.75em;
+  height: 2.5em;
+  line-height: 2.5em;
+  position: relative;
+  text-align: center;
+  top: 0;
+  width: 2.5em;
+}
+
+#intro-aerial-wrapper #aerial-header nav a:hover {
+  font-size: 1.1em;
+}
+
+#intro-aerial-wrapper #aerial-header nav a:hover:before {
+  background-color: rgba(255, 255, 255, 0.175);
+  color: #fff;
+}
+
+#intro-aerial-wrapper #aerial-header nav a:active {
+  font-size: 0.95em;
+  background: none;
+}
+
+#intro-aerial-wrapper #aerial-header nav a:active:before {
+  background-color: rgba(255, 255, 255, 0.35);
+  color: #fff;
+}
+
+#intro-aerial-wrapper .icon {
+  text-decoration: none;
+  position: relative;
+}
+
+#intro-aerial-wrapper .icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  text-transform: none !important;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+
+#intro-aerial-wrapper .icon.solid:before {
+  font-weight: 900;
+}
+
+#intro-aerial-wrapper .icon.brands:before {
+  font-family: "Font Awesome 5 Brands";
+}
+
+#intro-aerial-wrapper .button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  background-color: transparent;
+  border-radius: 3px;
+  border: solid 1px #fff;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 300;
+  height: 3.5em;
+  line-height: 3.5em;
+  padding: 0 1.75em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-top: 2em;
+}
+
+#intro-aerial-wrapper .button:hover {
+  background-color: rgba(255, 255, 255, 0.175);
+}
+
+#intro-aerial-wrapper .button:active {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+#intro-aerial-wrapper .button.down {
+  border-radius: 100%;
+  height: 4em;
+  line-height: 4em;
+  padding: 0;
+  width: 4em;
+}
+
+#intro-aerial-wrapper .button.down:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  text-transform: none !important;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+}
+
+#intro {
+  position: relative;
+  z-index: 10;
+  height: 100vh !important;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  #intro-aerial-wrapper #aerial-header h1 {
+    font-size: 3em;
+  }
+}
