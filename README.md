@@ -35,7 +35,7 @@ Visit the live site at: https://donglan-digital.github.io/donglantechie/
 
 - LinkedIn: [Donglan Liang](https://www.linkedin.com/in/donglan-liang-589271324)
 - GitHub: [@Donglan-digital](https://github.com/Donglan-digital)
-- Email: donglan.digital@gmail.com
+- Email: donglan.digital@hotmail.com
 
 ## Credits
 
